@@ -3,27 +3,67 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21DB173722C7961C045FAC5C /* Pods_JourneySharingApplication_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C6F14A9DE13F45C93AC2AD /* Pods_JourneySharingApplication_iOS.framework */; };
 		FA51A6F8240EFFDC00DEDE3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A6F7240EFFDC00DEDE3A /* AppDelegate.swift */; };
 		FA51A6FA240EFFDC00DEDE3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A6F9240EFFDC00DEDE3A /* SceneDelegate.swift */; };
-		FA51A6FC240EFFDC00DEDE3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A6FB240EFFDC00DEDE3A /* ViewController.swift */; };
+		FA51A6FC240EFFDC00DEDE3A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A6FB240EFFDC00DEDE3A /* MainViewController.swift */; };
 		FA51A6FF240EFFDC00DEDE3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA51A6FD240EFFDC00DEDE3A /* Main.storyboard */; };
 		FA51A701240EFFE000DEDE3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA51A700240EFFE000DEDE3A /* Assets.xcassets */; };
 		FA51A704240EFFE000DEDE3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA51A702240EFFE000DEDE3A /* LaunchScreen.storyboard */; };
+		FA51A71D24107DF300DEDE3A /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA51A71C24107DF300DEDE3A /* LogIn.storyboard */; };
+		FA51A71F24107E0900DEDE3A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A71E24107E0900DEDE3A /* LogInViewController.swift */; };
+		FA51A7212411565A00DEDE3A /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA51A7202411565A00DEDE3A /* SignUp.storyboard */; };
+		FA51A723241156A800DEDE3A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A722241156A800DEDE3A /* SignUpViewController.swift */; };
+		FA51A7282411CB5C00DEDE3A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A7242411CB5B00DEDE3A /* User.swift */; };
+		FA51A7292411CB5C00DEDE3A /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A7252411CB5B00DEDE3A /* Role.swift */; };
+		FA51A72A2411CB5C00DEDE3A /* SocialMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A7262411CB5C00DEDE3A /* SocialMedia.swift */; };
+		FA51A72B2411CB5C00DEDE3A /* DiscountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A7272411CB5C00DEDE3A /* DiscountType.swift */; };
+		FA51A72D2411CCE300DEDE3A /* LogInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A72C2411CCE300DEDE3A /* LogInRequest.swift */; };
+		FA51A72F2411CF0200DEDE3A /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A72E2411CF0200DEDE3A /* TokenResponse.swift */; };
+		FA51A733241284F300DEDE3A /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA51A732241284F300DEDE3A /* TabBar.storyboard */; };
+		FA51A73524128F1800DEDE3A /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A73424128F1800DEDE3A /* HomeTabBar.swift */; };
+		FA51A737241293FC00DEDE3A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA51A736241293FC00DEDE3A /* Home.storyboard */; };
+		FA51A7392412940A00DEDE3A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA51A7382412940A00DEDE3A /* Profile.storyboard */; };
+		FA51A73B2412946900DEDE3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A73A2412946900DEDE3A /* HomeViewController.swift */; };
+		FA51A73D2412950500DEDE3A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A73C2412950500DEDE3A /* ProfileViewController.swift */; };
+		FA51A73F2413DDF200DEDE3A /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA51A73E2413DDF200DEDE3A /* ForgotPassword.storyboard */; };
+		FA51A7412413DE8800DEDE3A /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A7402413DE8800DEDE3A /* ForgotPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AA8AB6D331E7079D0E9E1CD /* Pods-JourneySharingApplication_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JourneySharingApplication_iOS.release.xcconfig"; path = "Target Support Files/Pods-JourneySharingApplication_iOS/Pods-JourneySharingApplication_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		A88F2C7D3B6FB0CBB61A0B13 /* Pods-JourneySharingApplication_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JourneySharingApplication_iOS.debug.xcconfig"; path = "Target Support Files/Pods-JourneySharingApplication_iOS/Pods-JourneySharingApplication_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D8C6F14A9DE13F45C93AC2AD /* Pods_JourneySharingApplication_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JourneySharingApplication_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA51A6F4240EFFDC00DEDE3A /* JourneySharingApplication_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JourneySharingApplication_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA51A6F7240EFFDC00DEDE3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA51A6F9240EFFDC00DEDE3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA51A6FB240EFFDC00DEDE3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA51A6FB240EFFDC00DEDE3A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FA51A6FE240EFFDC00DEDE3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA51A700240EFFE000DEDE3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA51A703240EFFE000DEDE3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA51A705240EFFE000DEDE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA51A71C24107DF300DEDE3A /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
+		FA51A71E24107E0900DEDE3A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		FA51A7202411565A00DEDE3A /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		FA51A722241156A800DEDE3A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FA51A7242411CB5B00DEDE3A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA51A7252411CB5B00DEDE3A /* Role.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		FA51A7262411CB5C00DEDE3A /* SocialMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMedia.swift; sourceTree = "<group>"; };
+		FA51A7272411CB5C00DEDE3A /* DiscountType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountType.swift; sourceTree = "<group>"; };
+		FA51A72C2411CCE300DEDE3A /* LogInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInRequest.swift; sourceTree = "<group>"; };
+		FA51A72E2411CF0200DEDE3A /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
+		FA51A732241284F300DEDE3A /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		FA51A73424128F1800DEDE3A /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
+		FA51A736241293FC00DEDE3A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		FA51A7382412940A00DEDE3A /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		FA51A73A2412946900DEDE3A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FA51A73C2412950500DEDE3A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FA51A73E2413DDF200DEDE3A /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
+		FA51A7402413DE8800DEDE3A /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +71,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21DB173722C7961C045FAC5C /* Pods_JourneySharingApplication_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BACC1A0DA3F11A76BC5E1FC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8C6F14A9DE13F45C93AC2AD /* Pods_JourneySharingApplication_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2B578D6EC6618D43402417B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A88F2C7D3B6FB0CBB61A0B13 /* Pods-JourneySharingApplication_iOS.debug.xcconfig */,
+				1AA8AB6D331E7079D0E9E1CD /* Pods-JourneySharingApplication_iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FA51A6EB240EFFDC00DEDE3A = {
 			isa = PBXGroup;
 			children = (
 				FA51A6F6240EFFDC00DEDE3A /* JourneySharingApplication_iOS */,
 				FA51A6F5240EFFDC00DEDE3A /* Products */,
+				D2B578D6EC6618D43402417B /* Pods */,
+				BACC1A0DA3F11A76BC5E1FC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +116,57 @@
 		FA51A6F6240EFFDC00DEDE3A /* JourneySharingApplication_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FA51A711240F18CA00DEDE3A /* Models */,
+				FA51A710240F18A500DEDE3A /* Storyboards */,
+				FA51A70F240F187900DEDE3A /* ViewControllers */,
 				FA51A6F7240EFFDC00DEDE3A /* AppDelegate.swift */,
 				FA51A6F9240EFFDC00DEDE3A /* SceneDelegate.swift */,
-				FA51A6FB240EFFDC00DEDE3A /* ViewController.swift */,
-				FA51A6FD240EFFDC00DEDE3A /* Main.storyboard */,
 				FA51A700240EFFE000DEDE3A /* Assets.xcassets */,
 				FA51A702240EFFE000DEDE3A /* LaunchScreen.storyboard */,
 				FA51A705240EFFE000DEDE3A /* Info.plist */,
 			);
 			path = JourneySharingApplication_iOS;
+			sourceTree = "<group>";
+		};
+		FA51A70F240F187900DEDE3A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA51A6FB240EFFDC00DEDE3A /* MainViewController.swift */,
+				FA51A722241156A800DEDE3A /* SignUpViewController.swift */,
+				FA51A71E24107E0900DEDE3A /* LogInViewController.swift */,
+				FA51A7402413DE8800DEDE3A /* ForgotPasswordViewController.swift */,
+				FA51A73424128F1800DEDE3A /* HomeTabBar.swift */,
+				FA51A73A2412946900DEDE3A /* HomeViewController.swift */,
+				FA51A73C2412950500DEDE3A /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA51A710240F18A500DEDE3A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA51A6FD240EFFDC00DEDE3A /* Main.storyboard */,
+				FA51A7202411565A00DEDE3A /* SignUp.storyboard */,
+				FA51A71C24107DF300DEDE3A /* LogIn.storyboard */,
+				FA51A73E2413DDF200DEDE3A /* ForgotPassword.storyboard */,
+				FA51A732241284F300DEDE3A /* TabBar.storyboard */,
+				FA51A736241293FC00DEDE3A /* Home.storyboard */,
+				FA51A7382412940A00DEDE3A /* Profile.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA51A711240F18CA00DEDE3A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA51A7272411CB5C00DEDE3A /* DiscountType.swift */,
+				FA51A7252411CB5B00DEDE3A /* Role.swift */,
+				FA51A7262411CB5C00DEDE3A /* SocialMedia.swift */,
+				FA51A7242411CB5B00DEDE3A /* User.swift */,
+				FA51A72C2411CCE300DEDE3A /* LogInRequest.swift */,
+				FA51A72E2411CF0200DEDE3A /* TokenResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA51A708240EFFE000DEDE3A /* Build configuration list for PBXNativeTarget "JourneySharingApplication_iOS" */;
 			buildPhases = (
+				38A6BEFA64FE69EF5F83F37C /* [CP] Check Pods Manifest.lock */,
 				FA51A6F0240EFFDC00DEDE3A /* Sources */,
 				FA51A6F1240EFFDC00DEDE3A /* Frameworks */,
 				FA51A6F2240EFFDC00DEDE3A /* Resources */,
+				4BBCE7DE14452B3D3586D802 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +229,82 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA51A737241293FC00DEDE3A /* Home.storyboard in Resources */,
+				FA51A71D24107DF300DEDE3A /* LogIn.storyboard in Resources */,
+				FA51A7392412940A00DEDE3A /* Profile.storyboard in Resources */,
 				FA51A704240EFFE000DEDE3A /* LaunchScreen.storyboard in Resources */,
+				FA51A73F2413DDF200DEDE3A /* ForgotPassword.storyboard in Resources */,
 				FA51A701240EFFE000DEDE3A /* Assets.xcassets in Resources */,
+				FA51A733241284F300DEDE3A /* TabBar.storyboard in Resources */,
 				FA51A6FF240EFFDC00DEDE3A /* Main.storyboard in Resources */,
+				FA51A7212411565A00DEDE3A /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38A6BEFA64FE69EF5F83F37C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JourneySharingApplication_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BBCE7DE14452B3D3586D802 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JourneySharingApplication_iOS/Pods-JourneySharingApplication_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JourneySharingApplication_iOS/Pods-JourneySharingApplication_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JourneySharingApplication_iOS/Pods-JourneySharingApplication_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA51A6F0240EFFDC00DEDE3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA51A6FC240EFFDC00DEDE3A /* ViewController.swift in Sources */,
+				FA51A71F24107E0900DEDE3A /* LogInViewController.swift in Sources */,
+				FA51A7292411CB5C00DEDE3A /* Role.swift in Sources */,
+				FA51A6FC240EFFDC00DEDE3A /* MainViewController.swift in Sources */,
+				FA51A7282411CB5C00DEDE3A /* User.swift in Sources */,
+				FA51A73D2412950500DEDE3A /* ProfileViewController.swift in Sources */,
+				FA51A72D2411CCE300DEDE3A /* LogInRequest.swift in Sources */,
+				FA51A72F2411CF0200DEDE3A /* TokenResponse.swift in Sources */,
 				FA51A6F8240EFFDC00DEDE3A /* AppDelegate.swift in Sources */,
 				FA51A6FA240EFFDC00DEDE3A /* SceneDelegate.swift in Sources */,
+				FA51A73524128F1800DEDE3A /* HomeTabBar.swift in Sources */,
+				FA51A723241156A800DEDE3A /* SignUpViewController.swift in Sources */,
+				FA51A7412413DE8800DEDE3A /* ForgotPasswordViewController.swift in Sources */,
+				FA51A72A2411CB5C00DEDE3A /* SocialMedia.swift in Sources */,
+				FA51A73B2412946900DEDE3A /* HomeViewController.swift in Sources */,
+				FA51A72B2411CB5C00DEDE3A /* DiscountType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,10 +446,12 @@
 		};
 		FA51A709240EFFE000DEDE3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A88F2C7D3B6FB0CBB61A0B13 /* Pods-JourneySharingApplication_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JourneySharingApplication_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +465,12 @@
 		};
 		FA51A70A240EFFE000DEDE3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA8AB6D331E7079D0E9E1CD /* Pods-JourneySharingApplication_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JourneySharingApplication_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

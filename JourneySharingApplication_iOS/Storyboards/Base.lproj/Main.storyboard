@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iJg-ZU-Fd6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="JourneySharingApplication_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7c-be-Z24">
+                                <rect key="frame" x="188" y="823" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="LogIn"/>
+                                <connections>
+                                    <segue destination="SJh-tO-V8b" kind="show" id="xwb-ve-VHu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5R-4u-gSd">
+                                <rect key="frame" x="183" y="749" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SignUp"/>
+                                <connections>
+                                    <segue destination="QoL-nI-JLC" kind="show" id="WaI-p1-2Lg"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ypu_night_car" translatesAutoresizingMaskIntoConstraints="NO" id="pF9-GV-Yme">
+                                <rect key="frame" x="-408" y="0.0" width="1230" height="643"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="slogan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqP-zc-vDa">
+                                <rect key="frame" x="186" y="565" width="51" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="journey_sharing_application_icon" translatesAutoresizingMaskIntoConstraints="NO" id="1ga-No-yJk">
+                                <rect key="frame" x="20" y="63" width="127" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="Nua-ZZ-MKW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="product_name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifF-uv-Ac4">
+                                <rect key="frame" x="155" y="63" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1ga-No-yJk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0yo-GF-Z2J"/>
+                            <constraint firstItem="1ga-No-yJk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="9YX-ZJ-wnx"/>
+                            <constraint firstItem="ifF-uv-Ac4" firstAttribute="leading" secondItem="1ga-No-yJk" secondAttribute="trailing" constant="8" id="Bkn-Ck-c4O"/>
+                            <constraint firstItem="ifF-uv-Ac4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="TJ0-h0-u7m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xAE-wu-NQw"/>
+                    <connections>
+                        <outlet property="icon" destination="1ga-No-yJk" id="93r-Zu-EBg"/>
+                        <outlet property="imageNightCar" destination="pF9-GV-Yme" id="RSg-Bo-v3s"/>
+                        <outlet property="logInButton" destination="E7c-be-Z24" id="rDk-3Z-Xd4"/>
+                        <outlet property="productName" destination="ifF-uv-Ac4" id="kKK-Ne-Top"/>
+                        <outlet property="signUpButton" destination="M5R-4u-gSd" id="nor-CC-aYb"/>
+                        <outlet property="slogan" destination="sqP-zc-vDa" id="nqc-sH-2Ym"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="129.91071428571428"/>
+        </scene>
+        <!--LogInViewController-->
+        <scene sceneID="1tk-8K-bYp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LogIn" referencedIdentifier="LogInViewController" id="SJh-tO-V8b" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2gC-Qf-aow"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyM-EX-sbl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1707" y="284"/>
+        </scene>
+        <!--SignUpViewController-->
+        <scene sceneID="wkv-9e-HUW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" referencedIdentifier="SignUpViewController" id="QoL-nI-JLC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BF6-XQ-gTj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qPL-aX-LJa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1714" y="-25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="meD-1p-6ne">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="iJg-ZU-Fd6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3ig-CX-4LJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="19R-v1-LKY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fGK-Sj-1ti" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="journey_sharing_application_icon" width="189" height="89"/>
+        <image name="ypu_night_car" width="1920" height="1080"/>
+    </resources>
+</document>
