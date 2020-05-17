@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,6 +17,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="JJ9-9R-A8V" kind="relationship" relationship="viewControllers" id="VsW-ou-jeB"/>
+                        <segue destination="0UU-0y-NH7" kind="relationship" relationship="viewControllers" id="HXj-zc-rul"/>
+                        <segue destination="rSr-Ba-QKv" kind="relationship" relationship="viewControllers" id="cQW-1V-QDd"/>
                         <segue destination="8dN-18-FJy" kind="relationship" relationship="viewControllers" id="gb3-sx-LPg"/>
                     </connections>
                 </tabBarController>
@@ -28,11 +30,31 @@
         <scene sceneID="MEH-Vk-8ua">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="ProfileViewController" id="8dN-18-FJy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="person.circle.fill" catalog="system" id="zXC-k8-mF9"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="zXC-k8-mF9"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FN9-jy-ikd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-72" y="-11"/>
+        </scene>
+        <!--SearchViewController-->
+        <scene sceneID="95b-cS-eA2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" referencedIdentifier="SearchViewController" id="0UU-0y-NH7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="f0d-fu-Ajj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hrw-Jf-HF4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71" y="-230"/>
+        </scene>
+        <!--NotificationsViewController-->
+        <scene sceneID="TUa-AM-qna">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notifications" referencedIdentifier="NotificationsViewController" id="rSr-Ba-QKv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notifications" image="bell.fill" catalog="system" id="UOV-js-wo2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fuP-6f-ToH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-70" y="-122"/>
         </scene>
         <!--HomeViewController-->
         <scene sceneID="Cs2-fa-tfO">
@@ -46,7 +68,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bell.fill" catalog="system" width="64" height="62"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
-        <image name="person.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>

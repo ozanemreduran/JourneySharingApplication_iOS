@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Log In View Controller-->
+        <!--Giriş Yap-->
         <scene sceneID="taf-Hs-MJd">
             <objects>
                 <viewController storyboardIdentifier="LogInViewController" id="hXM-b1-Tml" customClass="LogInViewController" customModule="JourneySharingApplication_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,37 +35,46 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cI-Fo-xu1">
-                                <rect key="frame" x="184" y="536" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVy-fi-8oo">
+                                <rect key="frame" x="184" y="318" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="5MH-JZ-DiM" kind="show" id="hfO-0O-1JT"/>
+                                    <action selector="forgotPassword:" destination="hXM-b1-Tml" eventType="touchUpInside" id="fgS-ua-gpP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKX-1B-s1U">
+                                <rect key="frame" x="184" y="408" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="signUpButton:" destination="hXM-b1-Tml" eventType="touchUpInside" id="Ng9-fc-59W"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bf7-OQ-7xO">
+                                <rect key="frame" x="186" y="44" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ZCt-re-sy0"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Giriş Yap" id="c8n-YF-3Rv"/>
                     <connections>
                         <outlet property="emailTextField" destination="x2Y-9g-pNN" id="mdQ-Ol-o4n"/>
+                        <outlet property="forgotPassword" destination="BVy-fi-8oo" id="C5j-Y4-3RY"/>
                         <outlet property="logInButton" destination="dMh-tQ-4p4" id="a7F-xv-DlW"/>
+                        <outlet property="logInLabel" destination="Bf7-OQ-7xO" id="qgB-ye-Xiu"/>
                         <outlet property="passwordTextField" destination="8he-8f-e4u" id="fbV-UZ-lCp"/>
+                        <outlet property="signUpButton" destination="pKX-1B-s1U" id="sWP-vk-XKY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QqD-62-6gf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-358" y="23"/>
-        </scene>
-        <!--HomeTabBar-->
-        <scene sceneID="TR7-zv-cSk">
-            <objects>
-                <viewControllerPlaceholder storyboardName="TabBar" referencedIdentifier="HomeTabBar" id="5MH-JZ-DiM" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="5b3-jA-Ut1"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ol4-Ar-dnh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="272" y="-14"/>
+            <point key="canvasLocation" x="-919" y="13"/>
         </scene>
     </scenes>
 </document>

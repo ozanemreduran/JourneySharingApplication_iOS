@@ -8,4 +8,5 @@ target 'JourneySharingApplication_iOS' do
   # Pods for JourneySharingApplication_iOS
 pod 'Alamofire', '~> 5.0'
 pod 'SwiftyJSON', '~> 4.0'
+pod "CBPinEntryView"
 end

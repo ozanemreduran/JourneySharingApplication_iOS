@@ -14,11 +14,29 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var forgotPassword: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var logInLabel: UILabel!
+    
     
     var userId : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        logInLabel.text = "Giriş Yap"
+        logInLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 20.0)
+        logInLabel.textColor = UIColor(red:0.01, green:0.66, blue:0.96, alpha:1.0)
+        logInLabel.textAlignment = .center
+        logInLabel.numberOfLines = 1
+        logInLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(logInLabel)
+        NSLayoutConstraint.activate([
+         logInLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 60),
+         logInLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 110),
+         logInLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -110),
+         logInLabel.heightAnchor.constraint(equalToConstant: 20)
+        ])
+        
         emailTextField.placeholder = "E-mail"
         emailTextField.keyboardType = UIKeyboardType.emailAddress
         emailTextField.backgroundColor = UIColor(red:0.84, green:0.86, blue:0.87, alpha:1.0)
@@ -28,7 +46,7 @@ class LogInViewController: UIViewController {
         emailTextField.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(emailTextField)
         NSLayoutConstraint.activate([
-            emailTextField.topAnchor.constraint(equalTo: view.topAnchor, constant: 90),
+            emailTextField.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
             emailTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             emailTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             emailTextField.heightAnchor.constraint(equalToConstant: 40)
@@ -43,7 +61,7 @@ class LogInViewController: UIViewController {
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(passwordTextField)
         NSLayoutConstraint.activate([
-            passwordTextField.topAnchor.constraint(equalTo: view.topAnchor, constant: 150),
+            passwordTextField.topAnchor.constraint(equalTo: view.topAnchor, constant: 160),
             passwordTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             passwordTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             passwordTextField.heightAnchor.constraint(equalToConstant: 40)
@@ -58,17 +76,39 @@ class LogInViewController: UIViewController {
         logInButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(logInButton)
         NSLayoutConstraint.activate([
-            logInButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 220),
+            logInButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 230),
             logInButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             logInButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             logInButton.heightAnchor.constraint(equalToConstant: 50)
         ])
+        forgotPassword.setTitle("Parolamı Unuttum", for: .normal)
+        forgotPassword.setTitleColor(UIColor(red:0.01, green:0.66, blue:0.96, alpha:1.0), for: .normal)
+        forgotPassword.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(forgotPassword)
+        NSLayoutConstraint.activate([
+            forgotPassword.topAnchor.constraint(equalTo: view.topAnchor, constant: 290),
+            forgotPassword.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 120),
+            forgotPassword.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -120),
+            forgotPassword.heightAnchor.constraint(equalToConstant: 20)
+        ])
         
-
+        signUpButton.setTitle("Üye Ol", for: .normal)
+        signUpButton.setTitleColor(UIColor(red:0.01, green:0.66, blue:0.96, alpha:1.0), for: .normal)
+        signUpButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(signUpButton)
+        NSLayoutConstraint.activate([
+            signUpButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 320),
+            signUpButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 140),
+            signUpButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -140),
+            signUpButton.heightAnchor.constraint(equalToConstant: 20)
+        ])
+    
         // Do any additional setup after loading the view.
     }
     
     @IBAction func logInButton(_ sender: Any) {
+        
+        
         
         let json: JSON =  ["password": passwordTextField.text!,"emailAddress": emailTextField.text!]
         
@@ -88,7 +128,28 @@ class LogInViewController: UIViewController {
                        print(err)
                    }
                 }
+        UserDefaults.standard.set(emailTextField.text, forKey: "email")
+        let storyBoard : UIStoryboard = UIStoryboard(name: "TabBar", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "HomeTabBar")
+        self.show(nextViewController, sender: self)
+        
     }
+    
+    @IBAction func forgotPassword(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "ForgotPassword", bundle:nil)
+
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ForgotPasswordViewController")
+        self.show(nextViewController, sender: self)
+    }
+    
+    @IBAction func signUpButton(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "SignUp", bundle:nil)
+
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SignUpViewController")
+        self.show(nextViewController, sender: self)
+    }
+    
     func displayMessage(userMessage: String) -> Void {
         DispatchQueue.main.async {
             let alertController = UIAlertController(title: "Uyarı", message: userMessage, preferredStyle: .alert)

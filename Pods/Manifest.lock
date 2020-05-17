@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.0.2)
+  - CBPinEntryView (1.7.1)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0)
+  - CBPinEntryView
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - CBPinEntryView
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
+  CBPinEntryView: 5a91ba422bd8a38eea587511c92c89b19be78454
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 2f235963bfe1ed4b4fea7efab0466920061891cf
+PODFILE CHECKSUM: afe07d7aa9c93784efa89b41933f8068d9dca8c6
 
 COCOAPODS: 1.9.0

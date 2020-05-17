@@ -3,4 +3,54 @@
    uuid = "68D2E792-B463-4C9A-AE87-0D5302CA3163"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D0898EB-14B2-4488-8633-984B428C4F0E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JourneySharingApplication_iOS/ViewControllers/ForgotPasswordViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "sendCode(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9D0898EB-14B2-4488-8633-984B428C4F0E - 133f9fa0007340d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JourneySharingApplication_iOS.ForgotPasswordViewController.sendCode(Any) -&gt; ()"
+                  moduleName = "JourneySharingApplication_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ozanduran/Documents/JourneySharingApplication_iOS/JourneySharingApplication_iOS/ViewControllers/ForgotPasswordViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "1528">
+               </Location>
+               <Location
+                  uuid = "9D0898EB-14B2-4488-8633-984B428C4F0E - 9d0c1c9ccd1384dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data, Alamofire.AFError&gt;) -&gt; () in JourneySharingApplication_iOS.ForgotPasswordViewController.sendCode(Any) -&gt; ()"
+                  moduleName = "JourneySharingApplication_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ozanduran/Documents/JourneySharingApplication_iOS/JourneySharingApplication_iOS/ViewControllers/ForgotPasswordViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

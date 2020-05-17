@@ -257,7 +257,7 @@ class SignUpViewController: UIViewController {
         
         let json: JSON =  ["gender": genderSelect.selectedSegmentIndex, "birthday": birthdayTextField.text!, "password": passwordTextField.text!, "emailAddress": emailTextField.text!, "surname": surnameTextField.text!, "name": nameTextField.text!]
                
-        AF.request("https://journey-sharing-application.herokuapp.com/user/save",
+        AF.request("http://25.109.92.209:8081/user/save",
               method: .post,
               parameters: json,
               encoder: JSONParameterEncoder.default).responseData { response in
@@ -277,6 +277,13 @@ class SignUpViewController: UIViewController {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Home", bundle:nil)
 
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "HomeViewController")
+        self.show(nextViewController, sender: self)
+    }
+    
+    @IBAction func logInButton(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "LogIn", bundle:nil)
+
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "LogInViewController")
         self.show(nextViewController, sender: self)
     }
     
@@ -312,7 +319,6 @@ class SignUpViewController: UIViewController {
         let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
         return emailPredicate.evaluate(with: enteredEmail)
-
     }
     
 }

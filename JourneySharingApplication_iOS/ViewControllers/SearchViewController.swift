@@ -1,14 +1,14 @@
 //
-//  HomeViewController.swift
+//  SearchViewController.swift
 //  JourneySharingApplication_iOS
 //
-//  Created by Ozan Duran on 6.03.2020.
+//  Created by Ozan Duran on 12.04.2020.
 //  Copyright © 2020 Ozan Emre Duran. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
